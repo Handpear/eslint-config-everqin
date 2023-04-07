@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-everqin",
   "description": "Everqin ESLint 规则",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "handpear<handpear@outlook.com>",
   "license": "MIT",
   "main": "index.js",
@@ -18,10 +18,21 @@
     "everqin",
     "恒沁"
   ],
+  "homepage": "https://github.com/Handpear/eslint-config-everqin.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Handpear/eslint-config-everqin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Handpear/eslint-config-everqin/issues"
+  },
   "packageManager": "pnpm@8.1.0",
   "engines": {
     "node": ">=16",
     "pnpm": ">=8"
+  },
+  "scripts": {
+    "clean:lib": "rimraf -g **/node_modules"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
@@ -34,6 +45,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-vue": "^9.10.0",
     "react": "^18.2.0",
+    "rimraf": "^4.4.1",
     "typescript": "^4.7.4",
     "vue-eslint-parser": "^9.1.1"
   },

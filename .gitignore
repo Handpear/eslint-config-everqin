@@ -33,7 +33,7 @@ esm
 .idea
 
 # Directories and files
-
+node_modules
 .pnp
 .pnp.js
 *.suo

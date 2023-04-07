@@ -139,6 +139,9 @@ module.exports = {
   },
   rules: {
     // 自定义你的规则
+
+    // 如果使用全局命名空间导致报错，则添加以下规则
+    'no-undef': ['off'],
   },
 };
 ```
@@ -170,6 +173,9 @@ module.exports = {
   },
   rules: {
     // 自定义你的规则
+
+    // 如果使用全局命名空间导致报错，则添加以下规则
+    'no-undef': ['off'],
   },
 };
 ```
@@ -222,6 +228,9 @@ module.exports = {
     // https://github.com/vuejs/vue-eslint-parser/issues/104
     // https://github.com/typescript-eslint/typescript-eslint/pull/5318
     '@typescript-eslint/prefer-optional-chain': 'off',
+
+    // 如果使用全局命名空间导致报错，则添加以下规则
+    'no-undef': ['off'],
   },
 };
 ```
