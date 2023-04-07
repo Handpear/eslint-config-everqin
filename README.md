@@ -182,10 +182,6 @@ module.exports = {
 
 ### TypeScript Vue
 
-建议使用 `npm init vue@3` 创建集成了 Vue, TypeScript 和 ESLint 的项目，然后再参考[此示例](./examples/typescript-vue/.eslintrc.js)调整其 ESLint 配置。
-
-常规方法如下：
-
 ```bash
 npm install --save-dev @babel/core @babel/eslint-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser @vue/eslint-config-typescript eslint eslint-config-everqin eslint-plugin-vue vue-eslint-parser
 ```

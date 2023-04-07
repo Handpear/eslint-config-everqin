@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-everqin",
   "description": "Everqin ESLint 规则",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "handpear<handpear@outlook.com>",
   "license": "MIT",
   "main": "index.js",
