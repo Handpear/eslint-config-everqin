@@ -18,7 +18,7 @@ class Builder {
   private ruleList: Rule[] = [];
   /** 当前 namespace 的所有规则合并后的文本，包含注释 */
   private rulesContent = '';
-  /** 插件初始配置的内容，如 test/react/.eslintrc.js */
+  /** 插件初始配置的内容，如 rules/react/.eslintrc.js */
   private initialEslintrcContent = '';
   /** build base 时，暂存当前 ruleConfig，供后续继承用 */
   private baseRuleConfig: Record<string, Rule> = {};

@@ -56,7 +56,7 @@ const errors: string[] = [];
 const remainingRules = [...activeRules];
 
 /**
- * 通过分析 test 目录下的文件，找出
+ * 通过分析 rules 目录下的文件，找出
  * 1. 使用了已废弃的规则
  * 2. 使用了 Prettier 的规则
  * 3. 可用的规则没有被使用
