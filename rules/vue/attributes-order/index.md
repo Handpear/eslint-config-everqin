@@ -1,1 +1,1 @@
-<!-- <<< @/rules/vue/attributes-order/good.vue -->
+<<< @/rules/vue/attributes-order/good.vue

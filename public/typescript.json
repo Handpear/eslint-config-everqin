@@ -4,6 +4,7 @@
     "value": "error",
     "description": "重载的函数必须写在一起",
     "reason": "增加可读性",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -13,6 +14,7 @@
     "value": "off",
     "description": "限制数组类型必须使用 Array<T> 或 T[]",
     "reason": "允许灵活运用两者",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -22,6 +24,7 @@
     "value": "off",
     "description": "禁止对没有 then 方法的对象使用 await",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -31,6 +34,7 @@
     "value": "off",
     "description": "禁止使用 // @ts-ignore // @ts-nocheck // @ts-check",
     "reason": "这种注释本身就是对特殊代码的说明",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -40,6 +44,7 @@
     "value": "off",
     "description": "禁止使用类似 tslint:disable-next-line 这样的注释",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -49,6 +54,7 @@
     "value": "off",
     "description": "禁止使用指定的类型",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -58,6 +64,7 @@
     "value": ["error", "fields"],
     "description": "类的只读属性若是一个字面量，则必须使用只读属性而不是 getter",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -67,6 +74,7 @@
     "value": "off",
     "description": "使用 Map 或 Set 时，必须在构造函数上用泛型定义类型",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -76,6 +84,7 @@
     "value": "off",
     "description": "必须使用内置的 Record<K, T> 来描述仅包含可索引成员的接口",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -85,6 +94,7 @@
     "value": ["error", { "assertionStyle": "as", "objectLiteralTypeAssertions": "never" }],
     "description": "类型断言必须使用 as Type，禁止使用 <Type>，禁止对对象字面量进行类型断言（断言成 any 是允许的）",
     "reason": "<Type> 容易被理解为 jsx",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -94,6 +104,7 @@
     "value": ["error", "interface"],
     "description": "优先使用 interface 而不是 type",
     "reason": "interface 可以 implement, extend 和 merge",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -103,6 +114,7 @@
     "value": "off",
     "description": "一致的类型导出语法",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -112,6 +124,7 @@
     "value": ["error", { "fixStyle": "inline-type-imports" }],
     "description": "必须使用 import type 导入类型",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -121,6 +134,7 @@
     "value": "off",
     "description": "有默认值或可选的参数必须放到最后",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "default-param-last",
     "requiresTypeChecking": false
@@ -130,6 +144,7 @@
     "value": "off",
     "description": "禁止使用 foo['bar']，必须写成 foo.bar",
     "reason": "当需要写一系列属性的时候，可以更统一",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "dot-notation",
     "requiresTypeChecking": true
@@ -139,6 +154,7 @@
     "value": "off",
     "description": "函数返回值必须与声明的类型一致",
     "reason": "返回值类型可以推导出来",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -148,6 +164,7 @@
     "value": "error",
     "description": "必须设置类的成员的可访问性",
     "reason": "将不需要公开的成员设为私有的，可以增强代码的可理解性，对文档输出也很友好",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -157,6 +174,7 @@
     "value": "off",
     "description": "导出的函数或类中的 public 方法必须定义输入输出参数的类型",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -166,6 +184,7 @@
     "value": "off",
     "description": "变量必须在定义的时候赋值",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "init-declarations",
     "requiresTypeChecking": false
@@ -175,6 +194,7 @@
     "value": "off",
     "description": "类的成员之间是否需要空行",
     "reason": "有时为了紧凑需要挨在一起，有时为了可读性需要空一行",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "lines-between-class-members",
     "requiresTypeChecking": false
@@ -215,6 +235,7 @@
     ],
     "description": "指定类成员的排序规则",
     "reason": "优先级：\n1. static > instance\n2. field > constructor > method\n3. public > protected > private",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -224,6 +245,7 @@
     "value": "error",
     "description": "接口中的方法必须用属性的方式定义",
     "reason": "配置了 strictFunctionTypes 之后，用属性的方式定义方法可以获得更严格的检查",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -233,6 +255,7 @@
     "value": "off",
     "description": "限制各种变量或类型的命名规则",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -242,6 +265,7 @@
     "value": "off",
     "description": "禁止使用 Array 构造函数",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "no-array-constructor",
     "requiresTypeChecking": false
@@ -251,6 +275,7 @@
     "value": "off",
     "description": "禁止滥用 toString 方法",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -260,6 +285,7 @@
     "value": "off",
     "description": "禁止使用容易混淆的非空断言",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -269,6 +295,7 @@
     "value": "off",
     "description": "禁止使用返回值为 void 的函数的返回值",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -278,6 +305,7 @@
     "value": "off",
     "description": "禁止重复定义类的成员",
     "reason": "编译阶段就会报错了",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-dupe-class-members",
     "requiresTypeChecking": false
@@ -287,6 +315,7 @@
     "value": "error",
     "description": "禁止枚举类型存在两个相同的值",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -296,6 +325,7 @@
     "value": "off",
     "description": "不允许枚举同时具有数字和字符串成员",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -305,6 +335,7 @@
     "value": "off",
     "description": "禁止 delete 时传入的 key 是动态的",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -314,6 +345,7 @@
     "value": "off",
     "description": "不允许有空函数",
     "reason": "有时需要将一个空函数设置为某个项的默认值",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-empty-function",
     "requiresTypeChecking": false
@@ -323,6 +355,7 @@
     "value": ["error", { "allowSingleExtends": true }],
     "description": "禁止定义空的接口",
     "reason": "允许仅继承",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -332,6 +365,7 @@
     "value": ["error", { "fixToUnknown": true, "ignoreRestArgs": true }],
     "description": "禁止使用 any 类型，除了 rest 参数之外",
     "reason": "有时需要定义如 `(...args: any[]) => void` 的类型",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -341,6 +375,7 @@
     "value": "off",
     "description": "禁止多余的 non-null 断言",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -350,6 +385,7 @@
     "value": "off",
     "description": "禁止定义没必要的类，比如只有静态方法的类",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -359,6 +395,7 @@
     "value": "off",
     "description": "禁止调用 Promise 时没有处理异常情况",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -368,6 +405,7 @@
     "value": "off",
     "description": "禁止对 array 使用 for in 循环",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -377,6 +415,7 @@
     "value": "off",
     "description": "禁止使用 eval",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-implied-eval",
     "requiresTypeChecking": true
@@ -386,6 +425,7 @@
     "value": "error",
     "description": "强制要求在只有内联类型限定符的情况下使用顶级导入类型限定符",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -395,6 +435,7 @@
     "value": "error",
     "description": "禁止给一个初始化时直接赋值为 number, string 的变量显式的声明类型",
     "reason": "可以简化代码",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -404,6 +445,7 @@
     "value": "off",
     "description": "禁止在类之外的地方使用 this",
     "reason": "通常情况下只允许在 class 中使用 this，但某些第三方库需要使用 this 获取上下文",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-invalid-this",
     "requiresTypeChecking": false
@@ -413,6 +455,7 @@
     "value": "error",
     "description": "禁止使用无意义的 void 类型",
     "reason": "void 只能用在函数的返回值中",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -422,6 +465,7 @@
     "value": "off",
     "description": "禁止在循环内的函数内部出现循环体条件语句中定义的变量",
     "reason": "使用 let 就已经解决了这个问题了",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-loop-func",
     "requiresTypeChecking": false
@@ -431,6 +475,7 @@
     "value": "error",
     "description": "禁止使用超出 js 精度范围的数字",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-loss-of-precision",
     "requiresTypeChecking": false
@@ -440,6 +485,7 @@
     "value": "off",
     "description": "禁止使用 magic numbers",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-magic-numbers",
     "requiresTypeChecking": false
@@ -449,6 +495,7 @@
     "value": "off",
     "description": "禁止 void 抛出空",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -458,6 +505,7 @@
     "value": "off",
     "description": "禁止在接口中定义 constructor，或在类中定义 new",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -467,6 +515,7 @@
     "value": "off",
     "description": "避免错误的使用 Promise",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -476,6 +525,7 @@
     "value": "off",
     "description": "不允许枚举同时具有数字和字符串成员",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -485,6 +535,7 @@
     "value": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
     "description": "禁止使用 namespace 来定义命名空间",
     "reason": "使用 es6 引入模块，才是更标准的方式。\n但是允许使用 declare namespace ... {} 来定义外部命名空间",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -494,6 +545,7 @@
     "value": "error",
     "description": "禁止非空断言后面跟着双问号",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -503,6 +555,7 @@
     "value": "error",
     "description": "禁止在 optional chaining 之后使用 non-null 断言（感叹号）",
     "reason": "optional chaining 后面的属性一定是非空的",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -512,6 +565,7 @@
     "value": "off",
     "description": "禁止使用 non-null 断言（感叹号）",
     "reason": "使用 non-null 断言时就已经清楚了风险",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -521,6 +575,7 @@
     "value": "off",
     "description": "禁止重复定义变量",
     "reason": "禁用 var 之后，编译阶段就会报错了",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-redeclare",
     "requiresTypeChecking": false
@@ -530,6 +585,7 @@
     "value": "off",
     "description": "禁止无用的联合类型或交叉类型",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -539,6 +595,7 @@
     "value": "error",
     "description": "禁止使用 require",
     "reason": "统一使用 import 来引入模块，特殊情况使用单行注释允许 require 引入",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -548,6 +605,7 @@
     "value": "off",
     "description": "禁止导入指定的模块",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-restricted-imports",
     "requiresTypeChecking": false
@@ -557,6 +615,7 @@
     "value": "off",
     "description": "禁止变量名与上层作用域内的已定义的变量重复",
     "reason": "很多时候函数的形参和传参是同名的",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-shadow",
     "requiresTypeChecking": false
@@ -566,6 +625,7 @@
     "value": ["error", { "allowDestructuring": true }],
     "description": "禁止将 this 赋值给其他变量，除非是解构赋值",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -575,6 +635,7 @@
     "value": "off",
     "description": "禁止 throw 字面量，必须 throw 一个 Error 对象",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-throw-literal",
     "requiresTypeChecking": true
@@ -584,6 +645,7 @@
     "value": "off",
     "description": "禁止使用类型别名",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -593,6 +655,7 @@
     "value": "off",
     "description": "测试表达式中的布尔类型禁止与 true 或 false 直接比较",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -602,6 +665,7 @@
     "value": "off",
     "description": "条件表达式禁止是永远为真（或永远为假）的",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -611,6 +675,7 @@
     "value": "off",
     "description": "在命名空间中，可以直接使用内部变量，不需要添加命名空间前缀",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -620,6 +685,7 @@
     "value": "off",
     "description": "禁止范型的类型有默认值时，将范型设置为该默认值",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -629,6 +695,7 @@
     "value": "off",
     "description": "禁止无用的类型断言",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -638,6 +705,7 @@
     "value": "error",
     "description": "禁止没用的类型限制",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -647,6 +715,7 @@
     "value": "off",
     "description": "禁止将 any 类型的变量作为函数参数调用",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -656,6 +725,7 @@
     "value": "off",
     "description": "禁止将变量或属性的类型设置为 any",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -665,6 +735,7 @@
     "value": "off",
     "description": "禁止调用 any 类型的变量上的方法",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -674,6 +745,7 @@
     "value": "off",
     "description": "禁止 class 和 interface 合并类型",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -683,6 +755,7 @@
     "value": "off",
     "description": "禁止将枚举值与非枚举值进行比较",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -692,6 +765,7 @@
     "value": "off",
     "description": "禁止获取 any 类型的变量中的属性",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -701,6 +775,7 @@
     "value": "off",
     "description": "禁止函数的返回值的类型是 any",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -710,6 +785,7 @@
     "value": ["error", { "allowShortCircuit": true, "allowTernary": true, "allowTaggedTemplates": true }],
     "description": "禁止无用的表达式",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-unused-expressions",
     "requiresTypeChecking": false
@@ -719,6 +795,7 @@
     "value": "off",
     "description": "已定义的变量必须使用",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-unused-vars",
     "requiresTypeChecking": false
@@ -728,6 +805,7 @@
     "value": "off",
     "description": "禁止在定义变量之前就使用它",
     "reason": "编译阶段检查就足够了",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-use-before-define",
     "requiresTypeChecking": false
@@ -737,6 +815,7 @@
     "value": "error",
     "description": "禁止出现没必要的 constructor",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "no-useless-constructor",
     "requiresTypeChecking": false
@@ -746,6 +825,7 @@
     "value": "off",
     "description": "禁止导出空对象",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -755,6 +835,7 @@
     "value": "off",
     "description": "禁止使用 require 来引入模块",
     "reason": "no-require-imports 规则已经约束了 require",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -764,6 +845,7 @@
     "value": "off",
     "description": "必须使用 ! 而不是 as",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -773,6 +855,7 @@
     "value": "off",
     "description": "限制语句之间的空行规则，比如变量定义完之后必须要空行",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "padding-line-between-statements",
     "requiresTypeChecking": false
@@ -782,6 +865,7 @@
     "value": "off",
     "description": "类的构造函数参数作为类属性时，必须加上可访问性修饰符",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -791,6 +875,7 @@
     "value": "off",
     "description": "使用 as const 替代 as 'bar'",
     "reason": "as const 是新语法，不是很常见",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -800,6 +885,7 @@
     "value": "off",
     "description": "枚举值必须初始化",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -809,6 +895,7 @@
     "value": "error",
     "description": "使用 for 循环遍历数组时，如果索引仅用于获取成员，则必须使用 for of 循环替代 for 循环",
     "reason": "for of 循环更加易读",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -818,6 +905,7 @@
     "value": "error",
     "description": "使用函数类型别名替代包含函数调用声明的接口",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -827,6 +915,7 @@
     "value": "off",
     "description": "使用 includes 而不是 indexOf",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -836,6 +925,7 @@
     "value": "off",
     "description": "枚举类型的值必须是字面量，禁止是计算值",
     "reason": "编译阶段检查就足够了",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -845,6 +935,7 @@
     "value": "error",
     "description": "禁止使用 module 来定义命名空间",
     "reason": "module 已成为 js 的关键字",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -854,6 +945,7 @@
     "value": "off",
     "description": "使用 ?? 替代 ||",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -863,6 +955,7 @@
     "value": "error",
     "description": "使用 optional chaining 替代 &&",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -872,6 +965,7 @@
     "value": "off",
     "description": "私有变量如果没有在构造函数外被赋值，则必须设为 readonly",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -881,6 +975,7 @@
     "value": "off",
     "description": "函数的参数必须设置为 readonly",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -890,6 +985,7 @@
     "value": "off",
     "description": "使用 reduce 方法时，必须传入范型，而不是对第二个参数使用 as",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -899,6 +995,7 @@
     "value": "off",
     "description": "使用 RegExp#exec 而不是 String#match",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -908,6 +1005,7 @@
     "value": "off",
     "description": "类的方法返回值是 this 时，类型必须设置为 this",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -917,6 +1015,7 @@
     "value": "off",
     "description": "使用 String#startsWith 而不是其他方式",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -926,6 +1025,7 @@
     "value": "off",
     "description": "当需要忽略下一行的 ts 错误时，必须使用 @ts-expect-error 而不是 @ts-ignore",
     "reason": "使用 @ts-expect-error 可以避免对不会报错的代码设置了 @ts-ignore",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -935,6 +1035,7 @@
     "value": "off",
     "description": "async 函数的返回值必须是 Promise",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -944,6 +1045,7 @@
     "value": "off",
     "description": "使用 sort 时必须传入比较函数",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -953,6 +1055,7 @@
     "value": "off",
     "description": "async 函数中必须存在 await 语句",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "require-await",
     "requiresTypeChecking": true
@@ -962,6 +1065,7 @@
     "value": "off",
     "description": "使用加号时，两者必须同为数字或同为字符串",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -971,6 +1075,7 @@
     "value": "off",
     "description": "模版字符串中的变量类型必须是字符串",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -980,6 +1085,7 @@
     "value": "off",
     "description": "禁止在 return 语句里使用 await",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "no-return-await",
     "requiresTypeChecking": true
@@ -989,6 +1095,7 @@
     "value": "off",
     "description": "联合类型和交叉类型必须排序",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -998,6 +1105,7 @@
     "value": "off",
     "description": "条件判断必须传入布尔值",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": true,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -1007,6 +1115,7 @@
     "value": "off",
     "description": "使用联合类型作为 switch 的对象时，必须包含每一个类型的 case",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -1016,6 +1125,7 @@
     "value": ["error", { "path": "never", "types": "always", "lib": "always" }],
     "description": "禁止使用三斜杠导入文件",
     "reason": "三斜杠是已废弃的语法，但在类型声明文件中还是可以使用的",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -1036,6 +1146,7 @@
     ],
     "description": "interface 和 type 定义时必须声明成员的类型",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false
@@ -1045,6 +1156,7 @@
     "value": "off",
     "description": "方法调用时需要绑定到正确的 this 上",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": true
@@ -1054,6 +1166,7 @@
     "value": "error",
     "description": "函数重载时，若能通过联合类型将两个函数的类型声明合为一个，则使用联合类型而不是两个函数声明",
     "reason": "",
+    "rulePrefix": "@typescript-eslint/",
     "fixable": false,
     "extendsBaseRule": "",
     "requiresTypeChecking": false

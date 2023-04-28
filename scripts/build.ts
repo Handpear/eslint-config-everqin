@@ -81,6 +81,7 @@ class Builder {
       value: fileModule.rules[fullRuleName],
       description: '',
       reason: '',
+      rulePrefix: NAMESPACE_CONFIG[this.namespace].rulePrefix,
       ...(this.ruleMetaMap[fullRuleName] || { fixable: false, extendsBaseRule: '', requiresTypeChecking: false }),
     };
     if (comments !== null) {

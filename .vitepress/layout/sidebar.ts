@@ -16,7 +16,7 @@ export const sidebar: DefaultTheme.Sidebar = Object.entries({
       link: `/rules/${key}/`,
       items: Object.values(value).map((rule) => ({
         text: rule.name,
-        link: `/rules/${key}/${rule.name}/index`,
+        link: `/rules/${key}/${rule.name.replace(rule.rulePrefix, '')}/index`,
       })),
     },
   ];

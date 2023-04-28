@@ -15,6 +15,7 @@ interface Rule extends RuleDocs {
   value: unknown;
   description: string;
   reason: string;
+  rulePrefix: string;
 }
 /** 规则元信息对象 */
 declare interface RuleMeta {
