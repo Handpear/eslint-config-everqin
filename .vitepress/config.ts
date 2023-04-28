@@ -5,7 +5,7 @@ import { sidebar } from './layout/sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Everqin Team ESLint',
+  title: 'Everqin ESLint Rules',
   description: 'Everqin Team ESLint Docs',
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
   themeConfig: {
@@ -16,7 +16,10 @@ export default defineConfig({
     sidebar,
     socialLinks: [{ icon: 'github', link: 'https://github.com/handpear' }],
     docFooter: { prev: '上一页', next: '下一页' },
+    lastUpdatedText: '更新日期',
+    outlineTitle: '目录',
   },
+  srcExclude: ['**/README.md'],
   vite: {
     server: { host: true },
     css: { devSourcemap: true },
