@@ -29,7 +29,6 @@ class Builder {
     this.ruleList = await this.getRuleList();
     this.rulesContent = this.getRulesContent();
     this.initialEslintrcContent = this.getInitialEslintrc();
-    this.buildRulesJson();
     this.buildEslintrc();
   }
 
@@ -140,23 +139,6 @@ class Builder {
         return content.join('\n    ');
       })
       .join('');
-  }
-
-  /** 写入 public/***.json */
-  private buildRulesJson() {
-    const ruleConfig = this.ruleList.reduce<Record<string, Rule>>((prev, rule) => {
-      prev[rule.name] = rule;
-      return prev;
-    }, {});
-    /** build base 时，暂存当前 ruleConfig，供后续继承用 */
-    if (this.namespace === 'base') {
-      this.baseRuleConfig = ruleConfig;
-    }
-    this.writeWithPrettier(
-      path.resolve(__dirname, `../public/${this.namespace}.json`),
-      JSON.stringify(ruleConfig),
-      'json',
-    );
   }
 
   /** 写入各插件的 eslintrc 文件 */

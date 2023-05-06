@@ -3,15 +3,15 @@
  * https://github.com/Handpear/eslint-config-everqin.git
  *
  * 依赖版本：
- *   eslint ^8.39.0
+ *   eslint ~8.38.0
  *   eslint-plugin-react ^7.32.2
  *   eslint-plugin-vue ^9.11.0
- *   @babel/core ^7.21.4
- *   @babel/eslint-parser ^7.21.3
+ *   @babel/core ^7.21.8
+ *   @babel/eslint-parser ^7.21.8
  *   @babel/preset-react ^7.18.6
- *   vue-eslint-parser ^9.1.1
- *   @typescript-eslint/parser ^5.59.1
- *   @typescript-eslint/eslint-plugin ^5.59.1
+ *   vue-eslint-parser ^9.2.0
+ *   @typescript-eslint/parser ^5.59.2
+ *   @typescript-eslint/eslint-plugin ^5.59.2
  *   typescript ^5.0.4
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
@@ -108,8 +108,7 @@ module.exports = {
      */
     'vue/define-props-declaration': 'off',
     /**
-     * 禁止使用 foo['bar']，必须写成 foo.bar
-     * @reason 当需要写一系列属性的时候，可以更统一
+     *
      */
     'vue/dot-notation': 'off',
     /**
@@ -430,7 +429,7 @@ module.exports = {
      */
     'vue/no-side-effects-in-computed-properties': 'off',
     /**
-     * 禁止在数组中出现连续的逗号
+     *
      */
     'vue/no-sparse-arrays': 'error',
     /**
@@ -495,7 +494,7 @@ module.exports = {
      */
     'vue/no-use-v-if-with-v-for': 'error',
     /**
-     * 禁止出现没必要的字符串连接
+     *
      */
     'vue/no-useless-concat': 'error',
     /**
@@ -527,8 +526,7 @@ module.exports = {
      */
     'vue/no-watch-after-await': 'error',
     /**
-     * 必须使用 a = {b} 而不是 a = {b: b}
-     * @reason 有时后者可以使代码结构更清晰
+     *
      */
     'vue/object-shorthand': 'off',
     /**
@@ -565,7 +563,7 @@ module.exports = {
      */
     'vue/prefer-separate-static-class': 'off',
     /**
-     * 必须使用模版字符串而不是字符串连接
+     *
      */
     'vue/prefer-template': 'off',
     /**

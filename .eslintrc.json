@@ -3,5 +3,10 @@
   "extends": ["./index.js", "./typescript.js"],
   "rules": {
     "no-undef": ["off"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

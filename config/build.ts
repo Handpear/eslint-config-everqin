@@ -7,8 +7,7 @@ export const NAMESPACE_CONFIG = {
     exampleExtension: 'js',
     /** 插件前缀 */
     rulePrefix: '',
-    /** 规则配置 */
-    ruleConfig: require('../public/base.json'),
+
     /** 各插件的文档地址 */
     getDocsUrl: (rule: string) => `https://eslint.org/docs/rules/${rule}`,
     /** 插件的名称 */
@@ -17,7 +16,6 @@ export const NAMESPACE_CONFIG = {
   react: {
     exampleExtension: 'js',
     rulePrefix: 'react/',
-    ruleConfig: require('../public/react.json'),
     getDocsUrl: (rule: string) =>
       `https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/${rule.replace(/.*\//, '')}.md`,
     pluginName: 'eslint-plugin-react',
@@ -25,14 +23,12 @@ export const NAMESPACE_CONFIG = {
   vue: {
     exampleExtension: 'vue',
     rulePrefix: 'vue/',
-    ruleConfig: require('../public/vue.json'),
     getDocsUrl: (rule: string) => `https://eslint.vuejs.org/rules/${rule.replace(/.*\//, '')}.html`,
     pluginName: 'eslint-plugin-vue',
   },
   typescript: {
     exampleExtension: 'ts',
     rulePrefix: '@typescript-eslint/',
-    ruleConfig: require('../public/typescript.json'),
     getDocsUrl: (rule: string) => `https://typescript-eslint.io/rules/${rule.replace(/.*\//, '')}/`,
     pluginName: '@typescript-eslint/eslint-plugin',
   },

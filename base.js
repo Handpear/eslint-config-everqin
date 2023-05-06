@@ -3,15 +3,15 @@
  * https://github.com/Handpear/eslint-config-everqin.git
  *
  * 依赖版本：
- *   eslint ^8.39.0
+ *   eslint ~8.38.0
  *   eslint-plugin-react ^7.32.2
  *   eslint-plugin-vue ^9.11.0
- *   @babel/core ^7.21.4
- *   @babel/eslint-parser ^7.21.3
+ *   @babel/core ^7.21.8
+ *   @babel/eslint-parser ^7.21.8
  *   @babel/preset-react ^7.18.6
- *   vue-eslint-parser ^9.1.1
- *   @typescript-eslint/parser ^5.59.1
- *   @typescript-eslint/eslint-plugin ^5.59.1
+ *   vue-eslint-parser ^9.2.0
+ *   @typescript-eslint/parser ^5.59.2
+ *   @typescript-eslint/eslint-plugin ^5.59.2
  *   typescript ^5.0.4
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
